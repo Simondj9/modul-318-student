@@ -143,6 +143,7 @@
             this.Controls.Add(this.AbfahrtstafelDgv);
             this.Name = "VerbindungenAusFirma";
             this.Text = "Abfahrtstafel";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VerbindungenAusFirma_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.AbfahrtstafelDgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

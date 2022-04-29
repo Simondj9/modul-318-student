@@ -80,6 +80,12 @@ namespace SwissTransportGUI
 
             }
         }
+
+        private void VerbindungenAusFirma_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
     }
     
 }
