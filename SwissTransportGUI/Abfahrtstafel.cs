@@ -18,13 +18,6 @@ namespace SwissTransportGUI
         {
             InitializeComponent();
         }
-        private void ZurückAbfahrtstafelBtn(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form1 form = new Form1();
-            form.Show();
-
-        }
 
         ITransport transport = new Transport();
         private void AbfahrtstafelBtn(object sender, EventArgs e)
@@ -80,6 +73,6 @@ namespace SwissTransportGUI
 
             }
         }
+        }
     }
-    
-}
+   

@@ -93,8 +93,6 @@
                 throw new ArgumentNullException(nameof(fromStation));
             }
 
-
-
             if (string.IsNullOrEmpty(toStation))
             {
                 throw new ArgumentNullException(nameof(toStation));
@@ -104,15 +102,10 @@
                 throw new ArgumentNullException(nameof(toStation));
             }
 
-
-
             var uri = new Uri($"{WebApiHost}connections?from={fromStation}&to={toStation}&via[]={via}&date={date}&time={time}");
-
-
 
             return this.GetObject<Connections>(uri);
         }
-
 
     }
 }

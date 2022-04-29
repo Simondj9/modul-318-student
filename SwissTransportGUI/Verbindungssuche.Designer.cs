@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.VerbindungssucheBtnZurück = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,18 +49,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.VerbindungssucheDgv)).BeginInit();
             this.SuspendLayout();
             // 
-            // VerbindungssucheBtnZurück
-            // 
-            this.VerbindungssucheBtnZurück.Location = new System.Drawing.Point(12, 12);
-            this.VerbindungssucheBtnZurück.Name = "VerbindungssucheBtnZurück";
-            this.VerbindungssucheBtnZurück.Size = new System.Drawing.Size(112, 34);
-            this.VerbindungssucheBtnZurück.TabIndex = 0;
-            this.VerbindungssucheBtnZurück.Text = "Zurück";
-            this.VerbindungssucheBtnZurück.UseVisualStyleBackColor = true;
-            this.VerbindungssucheBtnZurück.Click += new System.EventHandler(this.VerbindungssucheBtnZurück_Click);
-            // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(516, 41);
             this.label1.Name = "label1";
@@ -71,6 +61,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(516, 94);
             this.label2.Name = "label2";
@@ -80,6 +71,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(516, 150);
             this.label3.Name = "label3";
@@ -89,6 +81,7 @@
             // 
             // AbfahrtsortCbx
             // 
+            this.AbfahrtsortCbx.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AbfahrtsortCbx.FormattingEnabled = true;
             this.AbfahrtsortCbx.Location = new System.Drawing.Point(726, 33);
             this.AbfahrtsortCbx.Name = "AbfahrtsortCbx";
@@ -98,6 +91,7 @@
             // 
             // ViaCbx
             // 
+            this.ViaCbx.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ViaCbx.FormattingEnabled = true;
             this.ViaCbx.Location = new System.Drawing.Point(726, 159);
             this.ViaCbx.Name = "ViaCbx";
@@ -107,6 +101,7 @@
             // 
             // AnkunftsortCbx
             // 
+            this.AnkunftsortCbx.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AnkunftsortCbx.FormattingEnabled = true;
             this.AnkunftsortCbx.Location = new System.Drawing.Point(726, 94);
             this.AnkunftsortCbx.Name = "AnkunftsortCbx";
@@ -116,6 +111,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(1513, 12);
@@ -126,6 +122,7 @@
             // 
             // VerbindungssucheBtn
             // 
+            this.VerbindungssucheBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.VerbindungssucheBtn.Location = new System.Drawing.Point(801, 301);
             this.VerbindungssucheBtn.Name = "VerbindungssucheBtn";
             this.VerbindungssucheBtn.Size = new System.Drawing.Size(173, 34);
@@ -136,6 +133,7 @@
             // 
             // VerbindungssucheDgv
             // 
+            this.VerbindungssucheDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.VerbindungssucheDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.VerbindungssucheDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.VerbindungssucheDgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -190,6 +188,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(516, 224);
             this.label5.Name = "label5";
@@ -199,6 +198,7 @@
             // 
             // datePicker
             // 
+            this.datePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.datePicker.CustomFormat = "dd.MM.yyyy";
             this.datePicker.Location = new System.Drawing.Point(726, 224);
             this.datePicker.Name = "datePicker";
@@ -207,6 +207,7 @@
             // 
             // timePicker
             // 
+            this.timePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timePicker.CustomFormat = "HH:mm";
             this.timePicker.Location = new System.Drawing.Point(1032, 224);
             this.timePicker.Name = "timePicker";
@@ -230,7 +231,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.VerbindungssucheBtnZurück);
             this.Name = "Verbindungssuche";
             this.Text = "Verbindungssuche";
             ((System.ComponentModel.ISupportInitialize)(this.VerbindungssucheDgv)).EndInit();
@@ -240,8 +240,6 @@
         }
 
         #endregion
-
-        private Button VerbindungssucheBtnZurück;
         private Label label1;
         private Label label2;
         private Label label3;
