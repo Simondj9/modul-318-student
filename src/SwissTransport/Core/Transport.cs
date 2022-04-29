@@ -73,5 +73,46 @@
 
             return JsonConvert.DeserializeObject<T>(content);
         }
+        public Connections GetConnectionsDate(string fromStation, string toStation, DateTime date, DateTime time)
+        {
+            if (string.IsNullOrEmpty(fromStation))
+            {
+                throw new ArgumentNullException(nameof(fromStation));
+            }
+            if (string.IsNullOrEmpty(toStation))
+            {
+                throw new ArgumentNullException(nameof(toStation));
+            }
+            var uri = new Uri($"{WebApiHost}connections?from={fromStation}&to={toStation}&date={date}&time={time}");
+            return this.GetObject<Connections>(uri);
+        }
+        public Connections GetConnectionsVia(string fromStation, string toStation, string via, DateTime date, DateTime time)
+        {
+            if (string.IsNullOrEmpty(fromStation))
+            {
+                throw new ArgumentNullException(nameof(fromStation));
+            }
+
+
+
+            if (string.IsNullOrEmpty(toStation))
+            {
+                throw new ArgumentNullException(nameof(toStation));
+            }
+            if (string.IsNullOrEmpty(via))
+            {
+                throw new ArgumentNullException(nameof(toStation));
+            }
+
+
+
+            var uri = new Uri($"{WebApiHost}connections?from={fromStation}&to={toStation}&via[]={via}&date={date}&time={time}");
+
+
+
+            return this.GetObject<Connections>(uri);
+        }
+
+
     }
 }
