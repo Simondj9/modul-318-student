@@ -87,7 +87,7 @@
             this.AbfahrtsortCbx.Name = "AbfahrtsortCbx";
             this.AbfahrtsortCbx.Size = new System.Drawing.Size(339, 33);
             this.AbfahrtsortCbx.TabIndex = 4;
-            this.AbfahrtsortCbx.SelectedIndexChanged += new System.EventHandler(this.AbfahrtsortCbx_SelectedIndexChanged);
+            this.AbfahrtsortCbx.KeyUp += new System.Windows.Forms.KeyEventHandler(this.AbfahrtsortCbx_KeyUp);
             // 
             // ViaCbx
             // 
@@ -97,7 +97,7 @@
             this.ViaCbx.Name = "ViaCbx";
             this.ViaCbx.Size = new System.Drawing.Size(339, 33);
             this.ViaCbx.TabIndex = 5;
-            this.ViaCbx.SelectedIndexChanged += new System.EventHandler(this.ViaCbx_SelectedIndexChanged);
+            this.ViaCbx.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ViaCbx_KeyUp);
             // 
             // AnkunftsortCbx
             // 
@@ -107,7 +107,7 @@
             this.AnkunftsortCbx.Name = "AnkunftsortCbx";
             this.AnkunftsortCbx.Size = new System.Drawing.Size(339, 33);
             this.AnkunftsortCbx.TabIndex = 6;
-            this.AnkunftsortCbx.SelectedIndexChanged += new System.EventHandler(this.AnkunftsortCbx_SelectedIndexChanged);
+            this.AnkunftsortCbx.KeyUp += new System.Windows.Forms.KeyEventHandler(this.AnkunftsortCbx_KeyUp);
             // 
             // label4
             // 

@@ -41,39 +41,39 @@ namespace SwissTransportGUI
                 }
             }
         }
-
-        private void AbfahrtsortCbx_SelectedIndexChanged(object sender, EventArgs e)
+        private void AbfahrtsortCbx_KeyUp(object sender, KeyEventArgs e)
         {
-            AbfahrtsortCbx.Items.Clear();
-
-
-
-            string ErstesItem = AbfahrtsortCbx.Text;
-
-
-
-            var Stations = transport.GetStations(ErstesItem);
-            List<string> liste = new List<string>();
-
-
-
-            foreach (var Station in Stations.StationList)
+            if (AbfahrtsortCbx.Text.Length == 5)
             {
-                liste.Add(Station.Name);
-            }
-            foreach (var item in liste)
-            {
-                AbfahrtsortCbx.Items.Add(item);
-            }
-            AbfahrtsortCbx.DroppedDown = true;
+                AbfahrtsortCbx.Items.Clear();
 
 
+
+                string ErstesItem = AbfahrtsortCbx.Text;
+
+
+
+                var Stations = transport.GetStations(ErstesItem);
+                List<string> list = new List<string>();
+
+
+
+                foreach (var Station in Stations.StationList)
+                {
+                    list.Add(Station.Name);
+                }
+                foreach (var item in list)
+                {
+                    AbfahrtsortCbx.Items.Add(item);
+                }
+                AbfahrtsortCbx.DroppedDown = true;
+            }
         }
 
-        private void AnkunftsortCbx_SelectedIndexChanged(object sender, EventArgs e)
+        private void AnkunftsortCbx_KeyUp(object sender, KeyEventArgs e)
         {
-            
-            
+            if (AbfahrtsortCbx.Text.Length == 5)
+            {
                 AnkunftsortCbx.Items.Clear();
 
 
@@ -96,13 +96,13 @@ namespace SwissTransportGUI
                     AnkunftsortCbx.Items.Add(item);
                 }
                 AnkunftsortCbx.DroppedDown = true;
-            
+            }
         }
 
-        private void ViaCbx_SelectedIndexChanged(object sender, EventArgs e)
+        private void ViaCbx_KeyUp(object sender, KeyEventArgs e)
         {
-           
-            
+            if (AbfahrtsortCbx.Text.Length == 5)
+            {
                 ViaCbx.Items.Clear();
 
 
@@ -125,9 +125,7 @@ namespace SwissTransportGUI
                     ViaCbx.Items.Add(item);
                 }
                 ViaCbx.DroppedDown = true;
-
-
-            
+            }
         }
     }
 }
